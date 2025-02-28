@@ -32,9 +32,9 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         // Carousel setup
-        carouselViewPager = view.findViewById(R.id.carousel_viewpager);
-        CarouselAdapter carouselAdapter = new CarouselAdapter(getCarouselItems());
-        carouselViewPager.setAdapter(carouselAdapter);
+        //carouselViewPager = view.findViewById(R.id.carousel_viewpager);
+        //CarouselAdapter carouselAdapter = new CarouselAdapter(getCarouselItems());
+        //carouselViewPager.setAdapter(carouselAdapter);
 
         // GridView setup
         gridView = view.findViewById(R.id.grid_view);
@@ -55,8 +55,8 @@ public class HomeFragment extends Fragment {
     private ArrayList<Object> getGridItems() {
         ArrayList<Object> items = new ArrayList<>();
         items.add(new GridItem(R.drawable.ic_home, "Item 1"));
-        items.add(new GridItem(R.drawable.ic_cart, "Item 2"));
-        items.add(new GridItem(R.drawable.ic_menu_call, "Item 3"));
+        items.add(new GridItem(R.drawable.ic_menu_search, "Item 2"));
+        items.add(new GridItem(R.drawable.ic_cart, "Item 3"));
 
         return items;
     }
